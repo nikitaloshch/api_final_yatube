@@ -37,6 +37,10 @@ class Post(models.Model):
         null=True
     )
 
+    class Meta:
+        ordering = ['-pub_date']
+        verbose_name_plural = 'Посты'
+
     def __str__(self):
         return self.text
 
@@ -58,6 +62,13 @@ class Comment(models.Model):
         auto_now_add=True,
         db_index=True
     )
+
+    class Meta:
+        ordering = ['created']
+        verbose_name_plural = 'Комменты'
+
+    def __str__(self):
+        return self.text
 
 
 class Follow(models.Model):
