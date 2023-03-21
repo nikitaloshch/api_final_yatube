@@ -94,7 +94,7 @@ POST запрос - /api/v1/jwt/create/
 "access":  "..."
 }
 ```
-####  Токен под ключом access нужно буде закинуть во вкладку HEADERS
+####  Токен под ключом access нужно будет закинуть во вкладку HEADERS
 #### В столбике Key выбрать вариант   Authorization
 #### Во втором столбике написать Bearer и ваш токен :
 | Authorization | Bearer {ваш токен}|
