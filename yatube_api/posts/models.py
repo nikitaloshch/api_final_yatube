@@ -37,12 +37,8 @@ class Post(models.Model):
         null=True
     )
 
-    class Meta:
-        ordering = ['-pub_date']
-        verbose_name_plural = 'Посты'
-
     def __str__(self):
-        return self.text
+        return self.text[:16]
 
 
 class Comment(models.Model):
@@ -68,7 +64,7 @@ class Comment(models.Model):
         verbose_name_plural = 'Комменты'
 
     def __str__(self):
-        return self.text
+        return self.text[:16]
 
 
 class Follow(models.Model):
