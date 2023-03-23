@@ -89,12 +89,12 @@ python manage.py createsuperuser
 ```json
 [
   {
-	"id":1,
-	"author":"...",
-	"text":"...",
-	"pub_date":"...",
-	"image":null,
-	"group":null
+    "id":1,
+    "author":"...",
+    "text":"...",
+    "pub_date":"...",
+    "image":null,
+    "group":null
   },
   {
     "id":2,
@@ -104,7 +104,7 @@ python manage.py createsuperuser
     "image":null,
     "group":null
   }
-,]
+]
 ```
 
 ```GET запрос - /api/v1/posts/{id}/ - получить определенный пост.```
